@@ -12,7 +12,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 80vw;
   height: 100vh; 
   margin: 0 auto;
 }
@@ -25,9 +25,9 @@ html, body {
 }
 
 .carousel-item img {
-  max-width: 100%; /* Cambiado para que se ajuste al contenedor */
-  height: auto; /* Mantener la relación de aspecto */
-  margin-right: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 2vw;
 }
 
 .carousel-content {
@@ -39,11 +39,11 @@ html, body {
 }
 
 .carousel-content h1 {
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
 }
 
 .carousel-content p {
-  margin-bottom: 20px;
+  margin-bottom: 3vh;
 }
 
 .carousel-buttons {
@@ -53,23 +53,23 @@ html, body {
 }
 
 .carousel-buttons .carousel-next {
-  margin-left: 15vw;
+  margin-left: 10vw;
 }
 
 .carousel-buttons button {
-  padding: 10px;
-  font-size: 20px;
+  padding: 2vh;
+  font-size: 2vh;
   cursor: pointer;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 50%; 
-  width: 50px; 
-  height: 50px;
+  width: 7vw; 
+  height: 7vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -82,25 +82,25 @@ html, body {
 .nav {
   display: flex;
   flex-direction: row;
-  width: 98.7%;
+  width: 100vw;
   background-color: #000000;
   justify-content: center;
-  gap: 10px;
-  padding: 10px;
+  gap: 1vw;
+  padding: 2vh;
 }
 
 .logotipo img {
-  height: 50px;
+  height: 7vh;
 }
 
 .value {
-  text-decoration: none; /* Quita el subrayado */
+  text-decoration: none;
   color: inherit;
   background-color: transparent;
   border: none;
-  padding: 10px 15px;
+  padding: 1vh 2vw;
   color: #FFFFFF; 
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
@@ -121,7 +121,7 @@ html, body {
 
 .wrap {
   width: 100vw;
-  height: 72.4vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,16 +133,16 @@ html, body {
 .wrap-text {
   color: #fff;
   text-align: center;
-  width: 50%;
+  width: 50vw;
 }
 
 .agendar {
   background: transparent;
-  padding: 5px 15px;
-  font-size: 17px;
+  padding: 1vh 2vw;
+  font-size: 2vh;
   font-weight: 600;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 25px;
+  border: 0.1vw solid rgb(255, 255, 255);
+  border-radius: 5vh;
   color: rgb(255, 255, 255);
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
@@ -157,22 +157,17 @@ html, body {
 }
 
 .agendar i {
-  margin-right: 10px;
+  margin-right: 2vw;
 }
 
 .agendar::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
   content: '';
   border-radius: 50%;
   display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
+  width: 20vw;
+  height: 20vw;
+  left: -5vw;
   text-align: center;
   transition: box-shadow 0.5s ease-out;
   z-index: -1;
@@ -180,7 +175,7 @@ html, body {
 
 .agendar:hover {
   color: #fff;
-  border: 1px solid rgb(140, 239, 161);
+  border: 0.1vw solid rgb(140, 239, 161);
 }
 
 /* Preguntas frecuentes */
@@ -191,15 +186,15 @@ html, body {
 
 .faq-section {
   max-width: 1200px;
-  margin: 5px auto;
-  padding: 20px;
+  margin: 2vh auto;
+  padding: 3vh;
   border-radius: 8px;
 }
 
 .faq-section h2 {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 3vh;
+  margin-bottom: 2vh;
   color: #2c3e50;
 }
 
@@ -214,12 +209,12 @@ html, body {
 
 .faq-item {
   background-color: #eaf0f6;
-  border: 1px solid #d1dce5;
+  border: 0.1vw solid #d1dce5;
   border-radius: 4px;
-  padding: 15px;
-  margin-bottom: 10px;
+  padding: 2vh;
+  margin-bottom: 2vh;
   color: #2c3e50;
-  font-size: 16px;
+  font-size: 2vh;
   cursor: pointer;
   position: relative;
   overflow: hidden; 
@@ -231,92 +226,75 @@ html, body {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 300px; 
+  max-height: 30vh;
 }
 
 .image-container {
   display: flex;
-  width: 80%;
+  width: 80vw;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
 }
 
 .profile {
-  padding-top: 5%;
-  padding-bottom: 4%;
+  padding: 5vh 0;
   text-align: center;
 }
 
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .specialty-list {
   color: #ffffff;
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 2vh;
+  font-size: 2vh;
 }
 
 /* Pie de pagina */
 .footer {
   background-color: #000000; 
   color: #FFFFFF; 
-  padding: 20px;
+  padding: 3vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr; 
   align-items: center;
-  width: 97.4%; 
+  width: 100vw; 
   position: relative;
   bottom: 0;
 }
 
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
+.footer-left,
+.footer-right,
 .footer-center {
   text-align: center;
 }
 
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; 
-}
-
 .footer-logo {
-  height: 60px; 
-}
-
-.footer-left p {
-  margin: 0;
+  height: 7vh; 
 }
 
 .footer-left p:first-child {
-  font-size: 1.2em; 
+  font-size: 2.5vh; 
 }
 
 .footer-left p:last-child {
-  font-size: 1em; 
+  font-size: 2vh; 
 }
 
 .footer-center p {
-  margin: 5px 0; 
+  margin: 0.5vh 0; 
 }
 
 .footer-center a {
   color: #FFFFFF; 
   text-decoration: none;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 1vw;
 }
 
 .footer-center a:hover {
@@ -325,72 +303,66 @@ html, body {
 
 .social-icons {
   display: flex;
-  gap: 15px;
+  gap: 1vw;
   justify-content: center;
 }
 
 .social-icons img {
-  width: 40px; 
-  height: 40px;
-}
-
-.footer-right p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.1em;
+  width: 3vw; 
+  height: 3vw;
 }
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   .carousel-container {
-    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-    height: auto; /* Ajustar altura */
+    flex-direction: column;
+    height: auto;
   }
 
   .carousel-item img {
-    max-width: 90%; /* Aumentar el ancho máximo de la imagen */
-    margin-right: 0; /* Quitar margen derecho */
-    margin-bottom: 20px; /* Añadir margen inferior */
+    max-width: 90%;
+    margin-right: 0;
+    margin-bottom: 3vh;
   }
 
   .wrap-text {
-    width: 90%; /* Ajustar el ancho en móviles */
+    width: 90vw;
   }
 
   .faq-container {
-    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .faq-column {
-    width: 100%; /* Ajustar el ancho de las columnas */
-    margin-bottom: 20px; /* Añadir margen inferior entre columnas */
+    width: 100%;
+    margin-bottom: 3vh;
   }
 
   .carousel-buttons {
-    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-    align-items: center; /* Centrar los botones */
+    flex-direction: column;
+    align-items: center;
   }
 
   .carousel-buttons .carousel-next {
-    margin-left: 0; /* Quitar margen izquierdo */
+    margin-left: 0;
   }
 
   .carousel-buttons button {
-    width: 40px; /* Ajustar el tamaño de los botones */
-    height: 40px;
+    width: 10vw;
+    height: 10vw;
   }
 
   .footer {
-    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    grid-template-columns: 1fr;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    text-align: center; /* Centrar el texto */
+    text-align: center;
   }
 
   .footer-right {
-    gap: 5px; /* Reducir el espacio entre los elementos */
+    gap: 1vh;
   }
 }
