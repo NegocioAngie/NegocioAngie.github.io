@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el navbar:', error));
+    </script>
+
+    <div class="carousel-container">
+        <div class="carousel-buttons">
+            <button class="carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+        </div>
+        
+        <div class="carousel-item" id="carousel">
+            <!-- Slide 1 -->
+            <div class="carousel-content">
+                <img src="Servicio1.png" alt="Imagen del Servicio 1">
+                <div>
+                    <h1>Servicio 1</h1>
+                    <p>Descripción detallada del Servicio 1. Aquí puedes añadir más detalles sobre lo que se ofrece.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-content" style="display:none;">
+                <img src="Servicio2.jfif" alt="Imagen del Servicio 2">
+                <div>
+                    <h1>Servicio 2</h1>
+                    <p>Descripción detallada del Servicio 2. Información adicional y beneficios del servicio.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-content" style="display:none;">
+                <img src="Servicio3.png" alt="Imagen del Servicio 3">
+                <div>
+                    <h1>Servicio 3</h1>
+                    <p>Descripción detallada del Servicio 3. Explicación y características de este servicio.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-buttons">
+            <button class="carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-content');
+
+        function moveCarousel(n) {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            slides[currentSlide].style.display = 'flex';
+        }
+
+        // Show the first slide by default
+        slides[currentSlide].style.display = 'flex';
+    </script>
+
+    <div id="footer-container"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('pie.html')
+                    .then(response => response.text())
+                    .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                    .catch(error => console.error('Error al cargar el pie de página:', error));
+            });
+        </script>
+</body>
+</html>

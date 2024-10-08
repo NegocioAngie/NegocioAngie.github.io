@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el navbar:', error));
+    </script>
+
+
+    <div class="image-container">
+        <div class="profile">
+            <img src="Angie.jpg" alt="Especialista 1" class="profile-image">
+            <div class="specialty-list">
+                <p>Soy una psicóloga con más de 10 años de experiencia en <br>
+                el campo de la salud mental, dedicada a brindar apoyo emocional<br>
+                y terapéutico a personas que buscan mejorar su bienestar psicológico<br>
+                y calidad de vida. Mi enfoque se basa en un trato empático, respetuoso<br>
+                y profesional, utilizando herramientas científicamente avaladas para <br>
+                ayudar a mis pacientes a superar desafíos como el estrés, la ansiedad,<br>
+                la depresión, y otros problemas emocionales o conductuales.<br>
+                <h2>Especialidades</h2>
+                <p>Especialidad 1</p>
+                <p>Especialidad 2</p>
+                <p>Especialidad 3</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="Angie.jpg" alt="Especialista 2" class="profile-image">
+            <div class="specialty-list">
+                <p>Soy una psicóloga con más de 10 años de experiencia en <br>
+                    el campo de la salud mental, dedicada a brindar apoyo emocional<br>
+                    y terapéutico a personas que buscan mejorar su bienestar psicológico<br>
+                    y calidad de vida. Mi enfoque se basa en un trato empático, respetuoso<br>
+                    y profesional, utilizando herramientas científicamente avaladas para <br>
+                    ayudar a mis pacientes a superar desafíos como el estrés, la ansiedad,<br>
+                    la depresión, y otros problemas emocionales o conductuales.<br>
+                    <h2>Especialidades</h2>
+                    <p>Especialidad 1</p>
+                    <p>Especialidad 2</p>
+                    <p>Especialidad 3</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="footer-container"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('pie.html')
+                    .then(response => response.text())
+                    .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                    .catch(error => console.error('Error al cargar el pie de página:', error));
+            });
+        </script>
+</body>
+</html>

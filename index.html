@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el navbar:', error));
+    </script>
+
+    <div class="wrap">
+        <div class="wrap-text">
+            <h1>Consultorio de Angie</h1>
+            <p>La conexión humana es el mayor tesoro.</p>
+            <button class="agendar">
+                <a href="https://wa.me/4451122491" target="_blank"><span>Agenda tu cita aquí</span></a>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div id="footer-container">
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    fetch('pie.html')
+                        .then(response => response.text())
+                        .then(data => {
+                        document.getElementById('footer-container').innerHTML = data;
+                    })
+                        .catch(error => console.error('Error al cargar el pie de página:', error));
+                });
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
