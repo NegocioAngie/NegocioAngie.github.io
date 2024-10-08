@@ -119,6 +119,26 @@ html, body {
   color: #000000; 
 }
 
+/* Media Queries para móviles en orientación vertical */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Apilar los elementos en columna */
+    align-items: center; /* Centrar los elementos */
+    padding: 2vh 0; /* Ajustar el padding */
+  }
+
+  .value {
+    padding: 1.5vh 4vw; /* Ajustar padding para más espacio entre opciones */
+    font-size: 2.5vh; /* Aumentar ligeramente el tamaño de la fuente */
+  }
+
+  .logotipo img {
+    height: 8vh; /* Ajustar el tamaño del logotipo */
+    margin-bottom: 2vh; /* Agregar espacio debajo del logo */
+  }
+}
+
+
 .wrap {
   width: 100vw;
   height: 75vh;
