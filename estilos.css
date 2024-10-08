@@ -7,13 +7,13 @@ html, body {
   color: #fff;
 }
 
-
+/* Estilos generales */
 .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 100vh; /* Hace que ocupe toda la pantalla verticalmente */
+  height: 100vh; 
   margin: 0 auto;
 }
 
@@ -25,16 +25,16 @@ html, body {
 }
 
 .carousel-item img {
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 100%; /* Cambiado para que se ajuste al contenedor */
+  height: auto; /* Mantener la relación de aspecto */
   margin-right: 20px;
 }
 
 .carousel-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el contenido del servicio en el medio horizontal */
-  text-align: center; /* Centra el texto */
+  align-items: center; 
+  text-align: center; 
   flex: 1;
 }
 
@@ -53,7 +53,7 @@ html, body {
 }
 
 .carousel-buttons .carousel-next {
-  margin-left: 15vw; /* Espacio entre la imagen y el botón de la derecha */
+  margin-left: 15vw;
 }
 
 .carousel-buttons button {
@@ -63,24 +63,22 @@ html, body {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 50%; /* Hace el botón redondo */
-  width: 50px; /* Ancho y alto iguales para asegurar un círculo perfecto */
+  border-radius: 50%; 
+  width: 50px; 
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra para el efecto 3D */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .carousel-buttons button:hover {
-  background-color: #0056b3; /* Cambia el color al hacer hover */
-  transform: scale(1.1); /* Hace el botón un poco más grande al pasar el cursor */
+  background-color: #0056b3; 
+  transform: scale(1.1); 
 }
 
-/*Navbar*/
-
-
+/* Navbar */
 .nav {
   display: flex;
   flex-direction: row;
@@ -121,23 +119,23 @@ html, body {
   color: #000000; 
 }
 
-.wrap{
+.wrap {
   width: 100vw;
   height: 72.4vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url(fondo1.jpg);
+  background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(fondo1.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.wrap-text{
+.wrap-text {
   color: #fff;
   text-align: center;
   width: 50%;
 }
- 
+
 .agendar {
   background: transparent;
   padding: 5px 15px;
@@ -185,8 +183,7 @@ html, body {
   border: 1px solid rgb(140, 239, 161);
 }
 
-
-/*Preguntas frecuentes*/
+/* Preguntas frecuentes */
 .presentacionPreguntas {
   display: flex;
   justify-content: center;
@@ -225,7 +222,7 @@ html, body {
   font-size: 16px;
   cursor: pointer;
   position: relative;
-  overflow: hidden; /* Asegura que el contenido oculto no se muestre fuera del contenedor */
+  overflow: hidden; 
   transition: background-color 0.3s ease;
 }
 
@@ -234,11 +231,8 @@ html, body {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 300px; /* Ajusta esta altura según el contenido de tus respuestas */
+  max-height: 300px; 
 }
-
-
-
 
 .image-container {
   display: flex;
@@ -267,16 +261,15 @@ html, body {
   font-size: 16px;
 }
 
-
-/*Pie de pagina*/
+/* Pie de pagina */
 .footer {
-  background-color: #000000; /* Color de fondo */
-  color: #FFFFFF; /* Color del texto */
+  background-color: #000000; 
+  color: #FFFFFF; 
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Tres columnas de tamaño proporcional */
+  grid-template-columns: 1fr 2fr 1fr; 
   align-items: center;
-  width: 97.4%; /* Asegura que el pie de página ocupe todo el ancho de la página */
+  width: 97.4%; 
   position: relative;
   bottom: 0;
 }
@@ -285,7 +278,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px; /* Espaciado entre elementos */
+  gap: 5px;
 }
 
 .footer-center {
@@ -296,11 +289,11 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* Espaciado entre "Contacto" y los íconos */
+  gap: 10px; 
 }
 
 .footer-logo {
-  height: 60px; /* Tamaño del logo ajustado */
+  height: 60px; 
 }
 
 .footer-left p {
@@ -308,22 +301,22 @@ html, body {
 }
 
 .footer-left p:first-child {
-  font-size: 1.2em; /* Tamaño de la fuente para el nombre del consultorio */
+  font-size: 1.2em; 
 }
 
 .footer-left p:last-child {
-  font-size: 1em; /* Tamaño de la fuente para el lema */
+  font-size: 1em; 
 }
 
 .footer-center p {
-  margin: 5px 0; /* Margen entre los textos en el centro */
+  margin: 5px 0; 
 }
 
 .footer-center a {
-  color: #FFFFFF; /* Color del enlace */
+  color: #FFFFFF; 
   text-decoration: none;
   font-weight: bold;
-  margin: 0 10px; /* Espaciado entre los enlaces */
+  margin: 0 10px;
 }
 
 .footer-center a:hover {
@@ -333,16 +326,71 @@ html, body {
 .social-icons {
   display: flex;
   gap: 15px;
-  justify-content: center; /* Centra los íconos dentro de la columna */
+  justify-content: center;
 }
 
 .social-icons img {
-  width: 40px; /* Tamaño de los iconos ajustado */
+  width: 40px; 
   height: 40px;
 }
 
 .footer-right p {
   margin: 0;
   font-weight: bold;
-  font-size: 1.1em; /* Tamaño de la fuente para "Contacto" */
+  font-size: 1.1em;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    height: auto; /* Ajustar altura */
+  }
+
+  .carousel-item img {
+    max-width: 90%; /* Aumentar el ancho máximo de la imagen */
+    margin-right: 0; /* Quitar margen derecho */
+    margin-bottom: 20px; /* Añadir margen inferior */
+  }
+
+  .wrap-text {
+    width: 90%; /* Ajustar el ancho en móviles */
+  }
+
+  .faq-container {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  }
+
+  .faq-column {
+    width: 100%; /* Ajustar el ancho de las columnas */
+    margin-bottom: 20px; /* Añadir margen inferior entre columnas */
+  }
+
+  .carousel-buttons {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    align-items: center; /* Centrar los botones */
+  }
+
+  .carousel-buttons .carousel-next {
+    margin-left: 0; /* Quitar margen izquierdo */
+  }
+
+  .carousel-buttons button {
+    width: 40px; /* Ajustar el tamaño de los botones */
+    height: 40px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center; /* Centrar el texto */
+  }
+
+  .footer-right {
+    gap: 5px; /* Reducir el espacio entre los elementos */
+  }
 }
