@@ -148,15 +148,18 @@ html, body {
   color: rgb(255, 255, 255);
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
-}
-
-.agendar span {
-  margin-left: 10px;
+  align-items: center;
 }
 
 .agendar a {
-  color: white; /* Color del texto del enlace */
-  text-decoration: none; /* Quitar subrayado del enlace */
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.agendar i {
+  margin-right: 10px;
 }
 
 .agendar::before {
@@ -181,6 +184,7 @@ html, body {
   color: #fff;
   border: 1px solid rgb(140, 239, 161);
 }
+
 
 /*Preguntas frecuentes*/
 .presentacionPreguntas {
